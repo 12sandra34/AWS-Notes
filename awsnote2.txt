@@ -1,0 +1,115 @@
+Scope AWS services
+==================
+
+Region-scoped service:select the Region you want to use
+If not asked to specify an individual AZ to deploy the service in:an indicator that the service operates on a Region-scope level 
+For Region-scoped services:AWS automatically performs actions to increase data durability and availability.
+
+
+To keep application available:maintain high availability and resiliency(Region-scoped managed services)
+
+
+Interacting with AWS
+====================
+
+Every action you make in AWS is an API call that is authenticated and authorized
+
+make API calls to services and resources through:
+   
+       -AWS Management Console
+       -AWS Command Line Interface (AWS CLI) 
+       -AWS software development kits (SDKs)
+
+AWS Management Console(web-based console):-
+-----------------------------------------
+the easiest way to create and manage resources when first begin working with the cloud
+
+services are placed in categories such as: 
+          
+       -Compute 
+       -Storage 
+       -Database  
+       -Analytics
+
+AWS Command Line Interface (AWS CLI(unified tool )):-
+-------------------------------------
+open-source
+
+Instead of manually logging in to the AWS Management Console to run a report to collect data from all the servers schedule an AWS CLI script with an API call to pull this data.
+ 
+manage AWS services.
+download and configure one tool that you can use to control multiple AWS services from the command line and automate them with scripts.
+
+AWS SDKs:-
+-----------
+open-source
+API calls to AWS can also be performed by running code with programming languages by AWS software development kits (SDKs).
+programming languages, such as C++, Go, Java, JavaScript, .NET, Node.js, PHP, Python, and Ruby.
+Developers commonly use AWS SDKs to integrate their application source code with AWS services.
+
+
+Security and the AWS Shared Responsibility Model
+=================================================
+
+Infrastructure services(Compute services, such as Amazon Elastic Compute Cloud (Amazon EC2) ) :
+-----------------------
+AWS:manages the infrastructure and foundation services
+Customer:control the operating system and application platform,in addition to encrypting, protecting, and managing customer data
+
+Container services(such as Amazon Relational Database Service (Amazon RDS) ) :
+---------------------
+AWS:infrastructure and foundation services, operating system, and application platform
+Customer:customer data, encrypting the data, and protecting it through network firewalls and backups
+
+Abstracted services(such as Amazon Simple Storage Service (Amazon S3)) :
+---------------------
+AWS:operates the infrastructure layer, operating system, and platforms, in addition to server-side encryption and data protection
+Customer:managing customer data and protecting it through client-side encryption
+
+
+AWS root user
+==============
+when created aws account begin with single sign-in identity:access to all AWS services and resources in the account
+the identity is AWS root user
+
+AWS root user credentials:
+---------------------------
+2 sets of credentials
+
+1.email address and password used to create the account(access the AWS Management Console)
+2. access keys(make programmatic requests from the AWS Command Line Interface (AWS CLI) or AWS API)
+
+Multi-factor authentication (MFA):
+==================================
+
+for preventing unwanted access
+
+enable MFA on root user provide
+
+    -email and password combination
+    -temporary numeric code provided by an MFA device
+
+
+AWS Identity and Access Management
+===================================
+
+manage access to your AWS account and resources
+provides a centralized view of who and what are allowed inside your AWS account (authentication)
+who and what have permissions to use and work with your AWS resources (authorization)
+share access to an AWS account and resources without sharing your set of access keys or password
+
+
+IAM User
+---------
+user represents a person or service that interacts with AWS
+consists of a name and a set of credentials
+
+IAM groups
+----------
+collection of users
+All users in the group inherit the permissions assigned to the group.
+possible to give permissions to multiple users at once
+
+IAM Policies
+-------------
+To manage access and provide permissions to AWS services and resources, you create IAM policies and attach them to IAM users, groups, and roles
