@@ -1,0 +1,55 @@
+Compute options in AWS:
+-----------------------
+   
+   -virtual machines (VMs)
+   -container services  
+   -serverless
+
+Virtual machines:to run virtual machines install a hypervisor on a host machine.The hypervisor provisions the resources to create and run your VMs.
+  
+VM in AWS:Amazon Elastic Compute Cloud(Amazon EC2)
+
+EC2:web service that provides secure, resizable compute capacity in the cloud
+    can provision virtual servers called EC2 instances
+    
+create and manage EC2 instances through:
+
+         -AWS Management Console
+         -AWS Command Line Interface (CLI)
+         -AWS software development kits (SDKs)  
+         -automation tools 
+         -infrastructure orchestration services
+
+Amazom Machine Image(AMI): provides information required to launch ec2 instances.
+
+
+Container Services
+==================
+
+containers:can host variety of workkloads like
+   
+    -web applications
+    -lift and shift migrations 
+    -distributed applications 
+    -streamlining of development, test, and production environments
+
+ With containers, workloads can be carried from one place to another, such as from development to production or from on premises to the cloud
+
+Docker helps customers create, package, deploy, and run containers
+
+In AWS, containers run on EC2 instances
+
+container orchestration services(to manage the containers):
+ 
+ Amazon Elastic Container Service (ECS)
+ Amazon Elastic Kubernetes Service (EKS)
+
+Amazon ECS
+==========
+end-to-end container orchestration service
+helps to spin up new containers and manage them across a cluster of EC2 instances 
+
+Amazon EKS
+===========
+portable, extensible, open source platform
+for managing containerized workloads and services
