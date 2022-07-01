@@ -1,0 +1,51 @@
+AWS with serverless compute:
+    to deploy workloads and applications without having to manage any EC2 instances
+
+serverless compute options:
+
+AWS Lambda
+===========
+run code without provisioning or managing servers or containers.
+upload your source code, and Lambda takes care of everything required to run and scale your code with high availability.
+
+Lambda function has three primary components :
+ 
+     -trigger
+     -code 
+     -configuration. 
+
+AWS Fargate
+============
+purpose-built serverless compute engine for containers
+scales and manages the infrastructure
+achieves this by allocating the right amount of compute,eliminating the need to choose and handle EC2 instances and cluster capacity, and scaling
+Fargate supports both Amazon ECS and Amazon EKS architecture, and provides workload isolation and improved security by design
+
+
+
+NETWORKING
+============
+
+Amazon Virtual Private Cloud(VPC):
+----------------------------------
+
+An isolated network created in the AWS cloud 
+
+Create a subnet:
+------------------
+After  creating VPC create subnets inside the network
+provide high availability and connectivity options for your resources
+
+Gateways
+==========
+
+Internet gateway:
+-------------------
+To enable internet connectivity for VPC-create an internet gateway(just like modem)
+nternet gateway is highly available and scalable
+
+Virtual private gateway:
+------------------------
+virtual private gateway connects AWS VPC to another private network.
+after attaching the gateway acts as anchor on the AWS side of the connection
+other side of the connection connect a customer gateway to the other private network
