@@ -1,0 +1,37 @@
+subnets
+=========
+section of a VPC
+group resources based on security or operational needs
+
+Types
+---------------
+Public subnets:contain resources that need to be accessible by the public, such as an online store’s website
+
+Private subnets:contain resources that should be accessible only through your private network, such as a database that contains customers’ personal information and order histories
+
+Network access control lists (ACLs)
+====================================
+virtual firewall
+controls inbound and outbound traffic at the subnet level
+By default, your account’s default network ACL allows all inbound and outbound traffic, but you can modify it by adding your own rules
+
+
+Security groups
+================
+virtual firewall 
+controls inbound and outbound traffic for an Amazon EC2 instance
+By default, a security group denies all inbound traffic and allows all outbound traffic
+can add custom rules to configure which traffic to allow or deny
+perform stateful packet filtering. They remember previous decisions made for incoming packets
+
+Domain Name System (DNS)
+=========================
+DNS resolution is the process of translating a domain name to an IP address
+
+Amazon Route 53
+--------------------
+DNS web service
+route end users to internet applications hosted in AWS
+connects user requests to infrastructure running in AWS
+route users to infrastructure outside of AWS
+manage the DNS records for domain names
